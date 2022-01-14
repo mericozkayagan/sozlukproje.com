@@ -1,0 +1,33 @@
+﻿@using EntityLayer.Concrete
+@model List<Category>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div style="width:200px;height:150px;float:left; background-color:aqua">
+    @Html.Label("Toplam kategori sayısı")
+    <br />
+    <label style="font-size:40px;margin-left:80px">@ViewBag.count</label>
+</div>
+<div style="width: 220px; height: 150px; float: left; margin-left: 10px; background-color:burlywood ">
+    @Html.Label("Başlık tablosunda 'yazılım' kategorisine ait başlık sayısı")
+    <br />
+    <label style="font-size:40px;margin-left:80px">@ViewBag.yazilim</label>
+</div>
+<div style="width: 220px; height: 150px; float: left; margin-left: 10px; background-color: lightpink ">
+    @Html.Label("Yazar adında 'a' harfi geçen yazar sayısı")
+    <br />
+    <label style="font-size:40px;margin-left:80px">@ViewBag.soru3</label>
+</div>
+<div style="width: 250px; height: 200px; float: left; margin-left: 10px; background-color: powderblue ">
+    @Html.Label("En fazla başlığa sahip kategori adı")
+    <br />
+    <label style="font-size:30px;margin-left:20px">@ViewBag.soru4</label>
+</div>
+<div style="width: 220px; height: 170px; float: left; margin-left: 10px; background-color: palegreen ">
+    @Html.Label("Kategori tablosunda durumu true olan kategoriler ile false olan kategoriler arasındaki sayısal fark")
+    <br />
+    <label style="font-size:40px;margin-left:80px">@ViewBag.soru5</label>
+</div>
+
